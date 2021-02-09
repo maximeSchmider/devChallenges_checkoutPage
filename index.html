@@ -1,95 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
 
-    <link rel="icon" href="devchallenges.png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Checkout</h1>
+  <main>
+    <div class="containerFacture">
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+      <div class="facture">
+        <div class="gpeItem">
+          <img src="photo1.png" alt="">
+          <div class="sousGpeItem">
+            <div class="itemPhoto">Vintage Backbag</div>
+            <div class="gpePrix">
+              <div class="prix">$54.99</div>
+              <div class="ancienPrix">$94.99</div>
+            </div>
+            <div class="quantite"></div>
+          </div>
+        </div>
+        <div class="gpeItem">
+          <img src="photo2.png" alt="">
+          <div class="sousGpeItem">
+            <div class="itemPhoto">Levi Shoes</div>
+            <div class="gpePrix">
+              <div class="prix">$74.99</div>
+              <div class="ancienPrix">$124.99</div>
+            </div>
+            <div class="quantite"></div>  
+          </div>
+        </div>
+        <div class="gpeTarif">
+          <div class="categoryTarif">Shipping</div>
+          <div class="tarif">$19</div>
+        </div>
+        <div class="gpeTarif">
+          <div class="categoryTarif">Total</div>
+          <div class="tarif">$148.98</div>
+        </div>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
     </div>
+    <div class="containerForm">
+
+      <form action="">
+        <h2>Contact information</h2>
+        <div class="gpeForm"><label for="email">E-mail</label><input type="email" id="email" name="email"></div>
+        <div class="gpeForm"><label for="phone">Phone"</label><input type="tel" id="phone" name="phone"></div>
+        <h2>Shipping address</h2>
+        <div class="gpeForm"><label for="name">Full Name</label><input type="text" id="name" name="name"></div>
+        <div class="gpeForm"><label for="adress">Adress</label><input type="text" id="adress" name="adress"></div>
+        <div class="gpeForm"><label for="city">City</label><input type="text" id="city" name="city"></div>
+        <div class="sousGpeForm">
+          <div class="gpeForm">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option value="france">France</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+            </select>
+          </div>
+          <div class="gpeForm">
+            <label for="postal">Postal Code</label><input type="number" id="postal" name="postal">
+          </div>
+        </div>
+        <div class="gpeForm">
+          <label for="check">Save this information for next time</label><input type="checkbox" id="check" name="check">
+        </div>
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+    </main>
+    <footer>
+      <p>Maxime Schmider@DevChallenges.io</p>
+    </footer>
   </body>
-</html>
+  </html>
