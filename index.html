@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout</title>
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Checkout</h1>
@@ -24,7 +24,11 @@
                 <div class="prix">$54.99</div>
                 <div class="ancienPrix">$94.99</div>
               </div>
-              <div class="quantite"></div>
+              <div class="quantite">
+                <button type="button" class="plusMoins" >-</button>
+                <div class="chiffreQuantite">1</div>
+                <button type="button" class="plusMoins" >+</button>
+              </div>
             </div>
           </div>
           <div class="gpeItem">
@@ -35,7 +39,11 @@
                 <div class="prix">$74.99</div>
                 <div class="ancienPrix">$124.99</div>
               </div>
-              <div class="quantite"></div>  
+              <div class="quantite">
+                <button type="button" class="plusMoins" >-</button>
+                <div class="chiffreQuantite">1</div>
+                <button type="button" class="plusMoins" >+</button>
+              </div>  
             </div>
           </div>
         </div>
@@ -54,14 +62,14 @@
     </div>
         <form action="">
           <h2>Contact information</h2>
-          <div class="gpeForm"><label for="email">E-mail</label><input type="email" id="email" name="email" placeholder="Enter your email" required></div>
-          <div class="gpeForm"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="Enter your phone" required></div>
+          <div class="gpeForm"><label for="email">E-mail</label><input type="email" id="email" name="email" placeholder="Enter your email" required><i class="fas fa-at"></i></div>
+          <div class="gpeForm"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="Enter your phone" required><i class="fas fa-phone"></i></div>
           <h2>Shipping address</h2>
-          <div class="gpeForm"><label for="name">Full Name</label><input type="text" id="name" name="name" value="Rodney Cotton" required></div>
-          <div class="gpeForm"><label for="adress">Adress</label><input type="text" id="adress" name="adress" placeholder="Your adress.." required></div>
-          <div class="gpeForm"><label for="city">City</label><input type="text" id="city" name="city" placeholder="Your city.." required></div>
+          <div class="gpeForm"><label for="name">Full Name</label><input type="text" id="name" name="name" value="Rodney Cotton" required><i class="fas fa-user"></i></div>
+          <div class="gpeForm"><label for="adress">Adress</label><input type="text" id="adress" name="adress" placeholder="Your adress.." required><i class="fas fa-home"></i></div>
+          <div class="gpeForm"><label for="city">City</label><input type="text" id="city" name="city" placeholder="Your city.." required><i class="fas fa-city"></i></div>
           <div class="sousGpeForm">
-            <div class="gpeForm">
+            <div class="gpeForm moitie">
               <label for="country">Country</label>
             <select name="country" id="country" placeholder="Your country.." required>
               <option value="" disabled selected hidden>Your country..</option>
@@ -69,9 +77,11 @@
               <option value="usa">USA</option>
               <option value="uk">UK</option>
             </select>
+            <i class="fas fa-globe-europe"></i>
           </div>
-          <div class="gpeForm">
+          <div class="gpeForm moitie">
             <label for="postal">Postal Code</label><input type="text" id="postal" name="postal" placeholder="Your postal code.." required>
+            <i class="fas fa-envelope"></i>
           </div>
         </div>
         <div class="gpeFormC">
